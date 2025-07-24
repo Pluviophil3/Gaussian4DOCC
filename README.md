@@ -140,17 +140,29 @@ cd Gaussian4DOCC
 
 ### Inference
 Download the checkpoints from [HERE](https://drive.google.com/drive/folders/1L9O88UqO1Oxtjo2FG-oNqwn_kNRUQ3pC?usp=sharing).
+
+You can use the following command to perform inference with these pre-trained weights below:
+
+| Type           | Gaussians | IoU | mIoU |
+|----------------|-----------|-----|------|
+| Gaussian4DOCC  | 25600     | 31.31  | 20.22   |
+| Gaussian4DOCC  | 51200     | 32.20  | 20.65   |
+
 ```shell
 python eval.py --py-config config/gs4docc_25600.py --work-dir out/eval --resume-from weights/25600.pth
 ```
 
 ### Train
 
+You can use the following command to train with dataset(e.g. nuScenes):
+
 ```shell
 python train.py --py-config config/gs4docc_25600.py --work-dir out/train
 ```
 
 ### Visualize
+
+You can visually examine the inference results through visualize tools
 
 ```shell
 python visualize.py --py-config config/gs4docc_25600.py --work-dir out/vis --resume-from weights/51200.pth --vis-occ --vis-gaussian --num-samples 3
