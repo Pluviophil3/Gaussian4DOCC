@@ -1,11 +1,31 @@
 # Gaussian4DOCC
 
-Gaussian Occupancy Prediction with Temporal Information Extraction and Spatiotemporal Fusion
-
+A Spatiotemporal Fusion Gaussian Occupancy Prediction for Autonomous Driving
 
 ### Abstract
 
-In autonomous driving, occupancy prediction is an emerging and mainstream perception system that predicts the spatial occupancy and semantics of 3D voxel grids around the autonomous vehicle from image inputs. However, occupancy prediction generally requires dense occupancy representations with redundant computing. Although 3D Gaussian has recently been applied to improve occupancy prediction, the existing Gaussian occupancy predictions still have many issues, such as inefficient Gaussian representation, Gaussian distribution distortion, and sparse supervision signal. In this work, we propose a novel Gaussian occupancy prediction, called Gaussian4DOCC, to solve these issues by considering temporal information extraction and spatiotemporal fusion, which consists of three modules: 1) historical Gaussian fusion, 2) Gaussian feature aggregation, and 3) perspective supervision. We conducted experiments for an ablation study and compared Gaussian4DOCC to the stateof-the-art occupancy predictions on the well-known dataset nuScenes. The results show that the temporal information extraction and spatiotemporal fusion contribute to the improvement of occupancy prediction and our Gaussian4DOCC outperforms the existing occupancy predictions. Finally, we release the opensource code, video description, and datasets to facilitate Gaussian occupancy prediction in autonomous driving.
+In autonomous driving, occupancy prediction is an
+emerging and mainstream perception system that predicts the
+spatial occupancy and semantics of 3D voxel grids around the
+autonomous vehicle from image inputs. However, occupancy
+prediction generally requires dense occupancy representations
+with redundant computing. Although 3D Gaussian has recently
+been applied to improve occupancy prediction, the existing
+Gaussian occupancy predictions still have many issues, such
+as inefficient Gaussian representation, Gaussian distribution
+distortion, and sparse supervision signal. In this work, we propose
+a novel Gaussian occupancy prediction, called Gaussian4DOCC,
+to solve these issues by considering spatiotemporal fusion, which
+consists of three modules: 1) historical Gaussian fusion, 2)
+Gaussian feature aggregation, and 3) perspective supervision.
+We conducted experiments for an ablation study and compared
+Gaussian4DOCC to the state-of-the-art occupancy predictions
+on the well-known dataset nuScenes. The results show that
+the spatio-temporal fusion contributes to the improvement of
+occupancy prediction, and our Gaussian4DOCC outperforms
+the existing occupancy predictions. Finally, we release the open-
+source code, video description, and datasets to facilitate Gaussian
+occupancy prediction in autonomous driving.
 
 > [!CAUTION]
 > **NON-STABLE VERSION WARN**
