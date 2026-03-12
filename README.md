@@ -25,7 +25,7 @@ Finally, we release the open-source code, video description, and datasets to fac
 - We propose a novel Gaussian feature aggregation to alleviate the Gaussian distribution distortion in occlusion scenarios by fusing temporal information, which introduces a 4D spatiotemporal sampling of continuous image inputs and aggregates Gaussian query sequences to improve occupancy prediction in occlusion scenarios. 
 - We propose perspective supervision as an auxiliary loss to improve the supervision density of the areas of interest during training, thus improving occupancy prediction accuracy.
 
-Extensive experiments on the well-known **nuScenes** dataset demonstrate that Gaussian4DOCC outperforms existing state-of-the-art occupancy prediction methods by leveraging temporal and spatiotemporal cues.
+Extensive experiments on the well-known **nuScenes** dataset demonstrate that RoGaussianOCC outperforms existing state-of-the-art occupancy prediction methods by leveraging temporal and spatiotemporal cues.
 
 We provide open-source code, datasets, and video demonstrations to support research and development in Gaussian-based occupancy prediction for autonomous driving.
 
@@ -136,8 +136,8 @@ Gaussian4DOCC
 Clone project:
 
 ```shell
-git clone https://github.com/Pluviophil3/Gaussian4DOCC.git
-cd Gaussian4DOCC
+git clone https://github.com/Pluviophil3/RoGaussianOCC.git
+cd RoGaussianOCC
 ```
 
 
@@ -149,8 +149,8 @@ You can use the following command to perform inference with these pre-trained we
 
 | Type           | Gaussians | IoU | mIoU |
 |----------------|-----------|-----|------|
-| Gaussian4DOCC  | 25600     | 31.31  | 20.22   |
-| Gaussian4DOCC  | 51200     | 32.20  | 20.65   |
+| RoGaussianOCC  | 25600     | 31.31  | 20.22   |
+| RoGaussianOCC  | 51200     | 32.20  | 20.65   |
 
 ```shell
 python eval.py --py-config config/gs4docc_25600.py --work-dir out/eval --resume-from weights/25600.pth
