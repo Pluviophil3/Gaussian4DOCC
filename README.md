@@ -1,14 +1,13 @@
-# RoGaussianOCC: 
-An Accurate and Robust Gaussian Occupancy Prediction in Autonomous Driving
+# RoGaussianOCC: An Accurate and Robust Gaussian Occupancy Prediction in Autonomous Driving
 
 ### Abstract
 
 In autonomous driving, occupancy prediction is an emerging and mainstream perception method that predicts the spatial occupancy and semantics of 3D voxel grids around the autonomous vehicle from image inputs, providing high robustness in perception, particularly in adverse driving scenes.
-However, occupancy prediction generally requires dense occupancy representations with redundant computing.
-Recently, Gaussian-based occupancy prediction has shown state-of-the-art performance in autonomous driving. 
-However, the existing Gaussian occupancy predictions remain inefficient and non-robust (e.g., occlusion scenarios), with several issues including inefficient Gaussian representation, distortion of the Gaussian distribution, and sparse supervision signals.
+However, occupancy prediction generally requires dense occupancy representations with redundant computing. Recently, Gaussian-based occupancy prediction has shown state-of-the-art performance in autonomous driving. However, the existing Gaussian occupancy predictions remain inefficient and non-robust (e.g., occlusion scenarios), with several issues including inefficient Gaussian representation, distortion of the Gaussian distribution, and sparse supervision signals.
+
 In this work, we propose a novel Gaussian occupancy prediction, called RoGaussianOCC, to solve these issues and improve efficiency and robustness by considering the three key novel modules: 1) Gaussian fusion, 2) Gaussian feature aggregation, and 3) perspective supervision.
 We conducted an ablation study and compared RoGaussianOCC with state-of-the-art occupancy predictions on the well-known nuScenes dataset.
+
 The results show that the proposed three novel modules contribute to the improvement of occupancy prediction in terms of accuracy and robustness, and our RoGaussianOCC outperforms the existing occupancy predictions (e.g., GaussianFormer).
 Finally, we release the open-source code, video description, and datasets to facilitate the development of Gaussian occupancy prediction in autonomous driving.
 
