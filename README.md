@@ -1,31 +1,16 @@
-# Gaussian4DOCC
-
-A Spatiotemporal Fusion Gaussian Occupancy Prediction for Autonomous Driving
+# RoGaussianOCC: 
+An Accurate and Robust Gaussian Occupancy Prediction in Autonomous Driving
 
 ### Abstract
 
-In autonomous driving, occupancy prediction is an
-emerging and mainstream perception system that predicts the
-spatial occupancy and semantics of 3D voxel grids around the
-autonomous vehicle from image inputs. However, occupancy
-prediction generally requires dense occupancy representations
-with redundant computing. Although 3D Gaussian has recently
-been applied to improve occupancy prediction, the existing
-Gaussian occupancy predictions still have many issues, such
-as inefficient Gaussian representation, Gaussian distribution
-distortion, and sparse supervision signal. In this work, we propose
-a novel Gaussian occupancy prediction, called Gaussian4DOCC,
-to solve these issues by considering spatiotemporal fusion, which
-consists of three modules: 1) historical Gaussian fusion, 2)
-Gaussian feature aggregation, and 3) perspective supervision.
-We conducted experiments for an ablation study and compared
-Gaussian4DOCC to the state-of-the-art occupancy predictions
-on the well-known dataset nuScenes. The results show that
-the spatio-temporal fusion contributes to the improvement of
-occupancy prediction, and our Gaussian4DOCC outperforms
-the existing occupancy predictions. Finally, we release the open-
-source code, video description, and datasets to facilitate Gaussian
-occupancy prediction in autonomous driving.
+In autonomous driving, occupancy prediction is an emerging and mainstream perception method that predicts the spatial occupancy and semantics of 3D voxel grids around the autonomous vehicle from image inputs, providing high robustness in perception, particularly in adverse driving scenes.
+However, occupancy prediction generally requires dense occupancy representations with redundant computing.
+Recently, Gaussian-based occupancy prediction has shown state-of-the-art performance in autonomous driving. 
+However, the existing Gaussian occupancy predictions remain inefficient and non-robust (e.g., occlusion scenarios), with several issues including inefficient Gaussian representation, distortion of the Gaussian distribution, and sparse supervision signals.
+In this work, we propose a novel Gaussian occupancy prediction, called RoGaussianOCC, to solve these issues and improve efficiency and robustness by considering the three key novel modules: 1) Gaussian fusion, 2) Gaussian feature aggregation, and 3) perspective supervision.
+We conducted an ablation study and compared RoGaussianOCC with state-of-the-art occupancy predictions on the well-known nuScenes dataset.
+The results show that the proposed three novel modules contribute to the improvement of occupancy prediction in terms of accuracy and robustness, and our RoGaussianOCC outperforms the existing occupancy predictions (e.g., GaussianFormer).
+Finally, we release the open-source code, video description, and datasets to facilitate the development of Gaussian occupancy prediction in autonomous driving.
 
 > [!CAUTION]
 > **NON-STABLE VERSION WARN**
